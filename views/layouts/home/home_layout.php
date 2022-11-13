@@ -10,9 +10,16 @@
     <?php 
     require '../vendor/autoload.php';
     ?>
-    <div>
-        <h1>Hello</h1>
-    <?=$this->section("page")?>
-    </div>
+    <!--Header: Bắt đầu-->
+    <?php include('home_header.php') ?>
+    <!--Header: Kết thúc-->
+
+    <!--Body: Bắt đầu-->
+    <?=$this->section('page') ?>
+    <!--Body: Kết thúc-->
+
+    <!--Footer: Bắt đầu-->
+    <?php include('home_footer.php') ?>
+    <!--Footer: Kết thúc-->
 </body>
 </html>
