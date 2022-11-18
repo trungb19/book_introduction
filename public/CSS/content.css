@@ -1,0 +1,50 @@
+.mword, #mword  {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#mword1 {
+    font-size: 50px;
+}
+
+.mword span {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.content-body {
+    margin: 5em;
+    width: 100%;
+}
+
+.mword_pronunciation div span {
+    margin-right: 10px;
+}
+
+.mword_pronunciation div span i {
+    margin: 0 3px;
+    font-style: normal;
+}
+
+.mword_def {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.mword_def i {
+    font-size: 15px;
+}
+
+.mword_meaning {
+    margin: 30px 0;
+    /* border-bottom: solid yellow 1px; */
+}
+
+.mword_example {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.mword_example i {
+    font-size: 10px;
+}

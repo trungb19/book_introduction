@@ -16,4 +16,21 @@ $router = new \Bramus\Router\Router();
 //Cấu hình đường dẫn đến trang chủ
 $router->get('/', '\App\Controllers\HomeController@index');
 $router->get('/home', '\App\Controllers\HomeController@index');
+//cấu hình đường dẫn đến trang admin
+$router->get('/admin', '\App\Controllers\AdminController@index');
+//Cấu hình route đăng nhập
+$router->post('/user/login', '\App\Controllers\Auth\LoginController@login');
+
+//Cấu hình route đăng ký
+$router->post('/user/signup', '\App\Controllers\Auth\RegisterController@signUp');
+
+//Cấu hình route đăng xuất
+$router->get('/user/logout', '\App\Controllers\Auth\LoginController@logout');
+
+// hiển thị profile
+$router->get('/profile', '\App\Controllers\ProfileController@showProfile');
+
+//Cấu hình route Api book from Google
+$router->post('Controllers/api', '\App\Controllers\Api@GetData');
+
 $router->run();

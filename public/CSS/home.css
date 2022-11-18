@@ -1,0 +1,243 @@
+body {
+    background-color: whitesmoke;
+}
+.container {
+    position: relative;
+    /* border: black solid 1px; */
+}
+.search-part {
+    background-color: aquamarine;
+    padding: 20px 10px;
+}
+.trademark {
+    font-size: 55px;
+    width: 100%;
+    font-family: monospace;
+    text-align: center;
+}
+
+.search-bar {
+    text-align: center;
+    width: 100%;
+}
+
+.search-bar input{
+    border-radius: 10px;
+    width: 60%;
+    border: solid grey 1px;
+    padding: 10px 20px;
+    font-family: monospace;
+} 
+
+.header {
+    color: white;
+    height: 5em;
+    background-color: #2c3e50;
+    line-height: 5em;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header a {
+    font-size: 20px;
+    color: white;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header p a {
+    font-size: 15px;
+}
+
+.span10 {
+    width: 420px;
+    height: 2em;
+  }
+
+.books.well {
+	margin:10px;
+	background-color:rgba(221,221,221,0.63);
+}
+
+/*Tạo bìa 2 bên*/
+.margin {
+    background-color: whitesmoke;
+}
+
+.loader {
+	width:100%;
+	height:100%;
+	margin:10px;
+	display:none;
+}
+
+.books.well {
+	margin:10px;
+	background-color:rgba(221,221,221,0.63);
+}
+#sort{
+	display: none;
+}
+.pagination{
+	display: none;
+}
+
+.modal {
+	height:95%!important;
+	top:0!important;
+}
+
+.pagination{
+	display: none;
+}
+
+.modal-body {
+	height:90%!important;
+}
+
+
+  input.search-query {
+    padding-right: 14px;
+    padding-right: 4px \9;
+    padding-left: 14px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  
+    margin-bottom: 0;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+  }
+
+.header p {
+    font-size: 15px;
+}
+
+.header div div div {
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content {
+    background-color: azure;
+}
+.content div {
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer {
+    background-color:darkslateblue;
+    color: white;
+    padding: 22px;
+}
+.footer > .col-3 {
+    font-size: 40px;
+    font-family: monospace;
+}
+.footer > .col-12 {
+    text-align: right;
+}
+.footer div div div {
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.card {
+    background-color: yellow;
+    color: black;
+    border: none;
+    text-align: center;
+    border-radius: 0;
+}
+
+.card-header {
+    border: none;
+    background-color: yellow;
+}
+
+.card-body {
+    font-size: 35px;
+}
+
+.tbl {
+    background-color: #FFAEBC;
+    /* border-radius: 5px; */
+    margin: 20px;
+}
+.tbl ul {
+    padding: 10px 40px;
+}
+.tbl li {
+    margin: 7px 0;
+}
+.tbl a {
+    color: black;
+}
+
+.tbl i {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.tbl div {
+    font-size: 38px; 
+    padding: 10px; 
+    background-color: #A0E7E5;
+}
+
+.wordof {
+    font-size: 30px;
+    padding: 20px;
+    background-color: white;
+    min-height: 7em;
+}
+
+.wtitle {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.word {
+    text-align: center;
+    height: 5em;
+    line-height: 5em;
+}
+
+.topbar p{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.col-3 ul {
+    font-size: 20px;
+}
+
+.col-3 ul li {
+    font-size: 16px;
+}
+
+.word_content {
+    /* background-color: tomato;  */
+    height: 10em; 
+    padding: 10px; 
+    font-size: 20px;
+}
+
+li {
+    display: inline-block;
+}
+
+.header-search {
+    margin: 0;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    line-height: 50px;
+}

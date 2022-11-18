@@ -1,0 +1,23 @@
+.profile {
+    padding: 30px;
+}
+.profile > div {
+    margin: 10px 0;
+}
+.profile .avt {
+    width: 200px;
+}
+
+.profile-info div {
+    margin: 5px 0;
+}
+.profile-info div:first-child {
+    font-size: 30px;
+    font-weight: bold;
+}
+.sidebar div div {
+    margin: 5px 0;
+}
+.sidebar div a{
+    display: inline-block;
+}
