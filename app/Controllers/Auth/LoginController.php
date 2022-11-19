@@ -14,6 +14,7 @@ class LoginController extends Controller {
         if (isset($_POST['mail']) && isset($_POST['pwd'])) {
             $info = Account::where('UserEmail', $_POST['mail'])->first();
             $info_user = User::where('UserID', $info->UserID)->first();
+            $books = Bookmark::where('UserID', $info->UserID)->first();
             $has_pwd = $info->UserPass;
             if ($info) {
                 echo "Mật khẩu không đúng";
@@ -21,6 +22,7 @@ class LoginController extends Controller {
                     echo "Đúng mật khẩu!";
                     $_SESSION['user'] = $info->UserID;
                     $_SESSION['name'] = $info_user->UserName;
+                    $_SESSION['email'] = $_POST['mail'];
                     if($info_user->Permission == 'admin')
                     redirect("/admin");
                     else

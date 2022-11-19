@@ -33,4 +33,7 @@ $router->get('/profile', '\App\Controllers\ProfileController@showProfile');
 //Cấu hình route Api book from Google
 $router->post('Controllers/api', '\App\Controllers\Api@GetData');
 
+//Thêm sách yêu thích
+$router->post('/user/favoriteBook', '\App\Controllers\Search@addFavoriteBook');
+
 $router->run();

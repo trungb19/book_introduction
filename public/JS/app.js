@@ -72,6 +72,19 @@ function buy(id) {
 		window.location.hash = $('#search').val();
 	});
 }
+
+
+// function like(get) {
+// 	alert($id);
+// 	// var id_string = id.text();
+// 	// $.post('/user/favoriteBook', {
+// 	// 	id: id_string
+// 	// }, function(data) {
+// 	// 	alert(data);
+// 	// }
+// 	// ) 
+// }
+
 //Sort Button Handler
 document.getElementById('sort').onclick = function() {
 	$('.loader').css({
@@ -119,3 +132,25 @@ function alertNotFound() {
 	$('#previewModal').modal('hide');
 	alert("Book Preview Not Available!");
 }
+
+
+//Thêm sách yêu thích
+// document.getElementById('like').on('click', function(){
+// 	confirm("Hello");
+	// console.log($('#mword').text());
+	// var word = $('#mword').text();
+	// $.ajax({
+	//   url: '/user/add/wordlist',
+	//   type: 'post',
+	//   data: { word:word },
+	//   success:function(data){
+	// 	// $('#mword').html(data);
+
+	// 	if ($('#like').hasClass('fa-heart-o')){ 
+	// 	  $('#like').removeClass('fa-heart-o').addClass('fa-heart')
+	// 	}else {
+	// 	  $('#like').removeClass('fa-heart').addClass('fa-heart-o');
+	// 	}
+	//   }
+	// })
+//})

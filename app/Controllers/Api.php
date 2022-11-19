@@ -75,6 +75,7 @@ class Request {
 				}else {
 					$authors=false;
 				}
+				$id=(isset($item->id) ? $item->id : false);
 				$image = (isset($item->volumeInfo->imageLinks->thumbnail) ? $item->volumeInfo->imageLinks->thumbnail : false);
 				$isbnNum = (isset( $item->volumeInfo->industryIdentifiers) ?  $item->volumeInfo->industryIdentifiers : false);
 				$publish_date = (isset($item->volumeInfo->publishedDate) ? $item->volumeInfo->publishedDate : false);
@@ -101,13 +102,24 @@ class Request {
 				$pages=htmlspecialchars($pages, ENT_QUOTES, 'UTF-8');
 				$booktitle=htmlspecialchars($booktitle, ENT_QUOTES, 'UTF-8');
 				$description=htmlspecialchars($description, ENT_QUOTES, 'UTF-8');
+				$id=htmlspecialchars($id, ENT_QUOTES, 'UTF-8');
 
 				echo '<div class="books well">
 						<div class="row">
 							<div class="col-2 margin"></div>
 							<div class="col-4">
 								<img src="' . $image . '" />
-								<a href="#" id="buy" onclick="buy('.$isbn10.');" class="btn btn-info">Favorite</a>
+								<button onclick="
+								$.ajax ({
+									url: \'user/favoriteBook\',
+									type: \'post\',
+									data: { bookID:\''.$id.'\' ,
+											booktitle: \''.$booktitle.'\'},
+									success:function(data){
+									  alert(\'Gửi dữ liệu thành công!\');
+									}
+								  })">
+								<p id="demo">'.$id.'</p></button>
 								<a href="#" id="preview" onclick=preview('.$isbnVal.'); class="btn btn-success">Preview</a>
 									<ul id="info">
 									<li>Author : '.$authors.'</li>
@@ -115,10 +127,12 @@ class Request {
 									<li>ISBN : '.$isbnVal.'</li>
 									<li>ISBN-10 : '.$isbn10.'</li>
 									<li>Book Pages: '.$pages.'</li>
+									<li>ID: '.$id.'</li>
 									</ul>
 							</div>
 							<div class="col-4">
-							<h3>' . $booktitle . ' by ' . $authors . '</h3>
+							<h3><p id="booktitle">' . $booktitle . '</p> </h3>
+							<h3> ' . $authors . '</h3>
 								<p>' . $description . '</p>
 							</div>
 							<div class="col-2 margin"></div>
@@ -129,6 +143,9 @@ class Request {
 
 	}
 
+	function addFavoriteBook() {
+		echo "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh";
+	}
 }
 
 

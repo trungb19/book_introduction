@@ -14,8 +14,18 @@ Class ProfileController extends Controller {
     public function showProfile(){
         if (isset($_SESSION['user'])){
             $this->sendPage('layouts/profile');
+            render_view('books', [
+                'books' => Book::all()
+            ]);
         }else {
             redirect('/');
         }
     }
+
+    public function index()
+	{
+		render_view('books', [
+			'books' => Book::all()
+		]);
+	}
 }
